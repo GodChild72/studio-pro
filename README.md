@@ -1,31 +1,23 @@
-# Studio Pro Pricing Page
+# Studio Pro
 
-This repo contains a simple static pricing and checkout page for the Studio Pro product.
+This repository now includes a working Studio Pro landing/demo experience and a default homepage redirect to the interactive studio.
 
-## What it includes
-- 3 pricing tiers
-- A Stripe payment link button
-- A PayPal checkout form
-- Mobile-friendly styling
+## Files
+- `index.html` — default homepage redirect to the main Studio page
+- `studio.html` — interactive browser-based music studio demo
+- `Studio Pro.html` — alternate Studio page
+- `README.md` — basic project notes
 
-## Customize before publishing
-Update these placeholders in `index.html`:
-- `YOUR_STRIPE_PAYMENT_LINK` with your Stripe Payment Link URL
-- `YOUR_PAYPAL_EMAIL@example.com` with your PayPal business email
-- Update `return` and `cancel_return` URLs if using PayPal
+## Run locally
+Open `index.html` in a browser, or use a local static server:
 
-## Deploy on GitHub Pages
-1. Commit and push this file to your repository.
-2. Open the repository settings.
-3. Go to Pages.
-4. Choose the branch and root folder.
-5. Save and wait for GitHub to generate the published URL.
+```bash
+python -m http.server 8000
+```
+Then visit:
+- http://localhost:8000/
 
-Your site URL will look like:
-`https://godchild72.github.io/Virtual-music-studio-and-social-platform-for-music-creators/`
-
-## Optional next step
-If you want, the next version can include:
-- a checkout success page
-- a subscription billing model
-- more polished branding and animations
+## Notes
+- The project is intentionally lightweight and static.
+- The main interactive features use the browser Web Audio API.
+- Payment placeholders in the pricing version are still ready to be replaced with real links.
